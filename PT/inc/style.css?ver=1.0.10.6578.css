@@ -218,7 +218,7 @@ Screen #2
 /*content:*/
 #screen-content {
     flex: 1;
-    padding: 0 46px 40px 0;
+    padding: 0 0 40px 46px;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
@@ -228,10 +228,9 @@ Screen #2
 #screen-content p { color:#413AFC;}
 #screen-content h1, #screen-content h2 {
     color:#413AFC;
-    font-size: 40px;
     font-size: 6vh;
     font-weight: 700;
-    line-height: 0.85em;
+    line-height: 1em;
     max-width: 256px;
     margin: 0;
 }
@@ -261,12 +260,12 @@ Screen #2
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-        -webkit-box-align: end;
-            -ms-flex-align: end;
-                align-items: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
 }
 .footer-logo {
     border: 2px solid #413AFC;
@@ -604,15 +603,15 @@ filter gallery screen
     background: #F0F0F0;
 }
 #back {
-    right: 18px;
+    left: 18px;
     font-size: 26px;
     line-height: 62px;
 }
 #back .icon {
-    transform: scale(-1);
+    /* transform: scale(-1); */
 }
 #share {
-    left: 18px;
+    right: 18px;
 }
 #share .icon {
     transition: all 0.5s ease;
